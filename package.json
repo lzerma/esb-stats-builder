@@ -1,0 +1,46 @@
+{
+  "name": "esb-ecar-stats2",
+  "version": "1.0.0",
+  "description": "ESB stats builder",
+  "main": "handler.js",
+  "scripts": {
+    "test": "mocha --no-timeouts",
+    "create-esb-stats-builder": "claudia create --name esb-stats-builder2 --region eu-west-1 --handler handler.handler",
+    "deploy-esb-stats-builder": "claudia update --name esb-stats-builder",
+    "start": "ntl"
+  },
+  "files": [
+    "*.js",
+    "service/*.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lzerma/esb-stats-builder.git"
+  },
+  "keywords": [
+    "esb",
+    "hackaton",
+    "stats",
+    "builder"
+  ],
+  "author": "Lucas Zerma <lzerma@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lzerma/esb-stats-builder/issues"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "3.0.0",
+    "simple-mock": "^0.7.0"
+  },
+  "homepage": "https://github.com/lzerma/esb-stats-builder#readme",
+  "dependencies": {
+    "claudia": "^2.1.0",
+    "easyxml": "^2.0.1",
+    "firebase": "^3.5.1",
+    "ntl": "^1.1.3",
+    "request": "^2.75.0",
+    "unirest": "^0.5.1",
+    "xml2json": "^0.10.0"
+  }
+}

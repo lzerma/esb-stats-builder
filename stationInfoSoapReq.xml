@@ -1,0 +1,11 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://driivz.com/stationinfo/2016/05/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ns:getChargingStationInfoRequest>
+            <!--Zero or more repetitions:-->
+            <stationId>12121</stationId>
+            <!--Optional:-->
+            <!--<timestamp>?</timestamp>-->
+        </ns:getChargingStationInfoRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

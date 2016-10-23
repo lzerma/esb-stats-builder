@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "esb-stats-builder2-executor",
+    "name": "esb-stats-builder2",
+    "region": "eu-west-1"
+  }
+}
